@@ -265,7 +265,9 @@ Rate Limit is a 32 bit unsigned integer that indicates the maximum sustainable
 throughput through the network element that sets it, expressed in Kilobits per
 second. A value of 0 indicates that there is no rate limit in place.
 
-Average Window
+Average Window, expressed in milliseconds is used to indicate the period over
+which a bitrate might be enforced. Combined with the rate limit value it is
+possible to deduce allowed burst sizes.
 
 
 ## Processing TRAIN Packets
